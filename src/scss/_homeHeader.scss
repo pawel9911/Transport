@@ -1,0 +1,86 @@
+header{
+    background: url(../assets/Home-Hero-Image.jpg) -300px 0 no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+.containerHead{
+    width: 1200px;
+    height: 100%;  
+    display: flex;
+    justify-content: flex-end;
+    .headPanel{
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h1{
+            text-align: center;
+            margin-bottom: 8px;
+            font-size: 26px;
+            font-weight: 500;
+            width: 70%;
+        }
+        .mainOptionsPage{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 70%;
+            margin: 30px;
+            a{
+                text-decoration: none;
+                text-align: center;
+                text-transform: uppercase;
+                color: $main-text-color;
+                margin: 10px;
+                width: 50%;
+                font-size: 25px;
+                padding: 25px 0px;
+                border: 1px solid  $main-text-color ;  
+            }
+        }
+    }
+}
+
+
+nav{
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    .logPanel{
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+        div{
+            padding: 5px 10px;
+            &:last-child{border: 1px solid $border;}
+            a{
+                text-decoration: none;
+                color: $main-text-color;
+            }
+        }
+    }
+    .menu{
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+        li{
+            padding: 10px 15px;
+            &:hover{
+                border: 1px solid $main-text-color;
+            }
+        }
+
+    }
+}
+
+
+
+
+    

@@ -1,8 +1,11 @@
+import { HashRouter, Route } from "react-router-dom";
+import Home from './componets/Home';
+
 const App = () =>{
   return(
-    <>
-      <h1>działa napewno</h1>
-    </>
+    <HashRouter>
+      <Route exact path ='/' component={Home}/>
+    </HashRouter>
   )
 }
 
