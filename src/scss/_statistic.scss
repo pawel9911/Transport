@@ -1,0 +1,38 @@
+.statistic{
+    background-color: $border;  
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    div:only-child{
+        width: 1200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.stats{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 300;
+    width: 30%;
+    letter-spacing: 0;
+    h1{
+        margin: 10px;
+    }
+    p:first-of-type{
+        font-size: 0.25em;
+        margin: 10px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    p:last-of-type{
+        font-size: 0.25em;
+        margin: 10px;
+        letter-spacing: 0;
+    } 
+}

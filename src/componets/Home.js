@@ -1,10 +1,15 @@
 import HomeHeader from './HomeHeader';
+import Statistic from './Statistic';
+import Purpose from './Purpose';
+import AboutUs from './AboutUs';
 
 const Home = () =>{
     return (
         <>
             <HomeHeader/>
-            <div name='fundation'>sss</div>
+            <Statistic name='start'/>
+            <Purpose name='purpose'/>
+            <AboutUs name='aboutUs'/>
         </>
     )
 }
