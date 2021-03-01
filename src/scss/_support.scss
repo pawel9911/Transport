@@ -24,10 +24,7 @@
             text-align: center;
             border: none;
             &:hover{
-                border: $main-text-color 2px solid;
-            }
-            &:checked{
-                border: $main-text-color 2px solid;
+                border: $color2 2px solid;
             }
         }
     }

@@ -23,7 +23,7 @@
             }
         }
         a{
-            @include button();
+            @include button($main-text-color);
             margin: 30px;
         }
     }

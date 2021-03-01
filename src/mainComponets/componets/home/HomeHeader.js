@@ -11,10 +11,10 @@ const HomeHeader = () =>{
             </nav>
             <div className='containerHead'>
                 <div className='headPanel'>
-                    <h1>Zacznij pomagać!<br/>Oddaj niechciane rzeczy w zaufane ręce</h1>
+                    <h1>Potrzebujesz Transportu?<br/>Skontaktuj się z nami dopasujemy ofertę</h1>
                     <div className='mainOptionsPage'>
-                        <Link to='/logowanie'>Oddaj<br/> rzeczy</Link>
-                        <Link to='/logowanie'>Zorganizuj zbiórkę</Link>
+                        <Link to='/logowanie'>Zamów<br/> usługę</Link>
+                        <Link to='/logowanie'>Poznaj naszą ofertę</Link>
                     </div>
                 </div>
             </div>

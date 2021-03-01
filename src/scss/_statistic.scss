@@ -1,8 +1,9 @@
 .statistic{
-    background-color: $border;  
+    background-color: $color2;  
     height: 300px;
     display: flex;
     justify-content: center;
+    color: $color3;
     div:only-child{
         width: 1200px;
         display: flex;
