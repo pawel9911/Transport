@@ -1,30 +1,31 @@
 header{
-    background: url(../assets/Home-Hero-Image.jpg) -300px 0 no-repeat;
-    background-size: contain;
+    background: url(../assets/road.jpg) center no-repeat;
+    background-size: cover;
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    
 }
-@mixin button {
+@mixin button ($color) {
     text-decoration: none;
     text-align: center;
     text-transform: uppercase;
-    color: $main-text-color;
+    color: $color;
     margin: 10px;
     width: 230px;
     font-size: 25px;
     padding: 25px 0px;
-    border: 1px solid  $main-text-color ;  
+    border: 1px solid  $color;  
 }
 
 .containerHead{
     width: 1200px;
     height: 100%;  
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     .headPanel{
         width: 60%;
         display: flex;
@@ -37,6 +38,7 @@ header{
             font-size: 26px;
             font-weight: 500;
             width: 70%;
+            color: $color3;
         }
         .mainOptionsPage{
             display: flex;
@@ -45,7 +47,7 @@ header{
             width: 70%;
             margin: 30px;
             a{
-               @include button(); 
+               @include button($color3); 
             }
         }
     }
@@ -63,10 +65,10 @@ nav{
         margin-top: 10px;
         div{
             padding: 5px 10px;
-            &:last-child{border: 1px solid $border;}
+            &:last-child{border: 2px solid $color3;}
             a{
                 text-decoration: none;
-                color: $main-text-color;
+                color: $color3;
             }
         }
     }
@@ -74,10 +76,11 @@ nav{
         display: flex;
         flex-direction: row;
         margin-top: 10px;
+        color: $color3;
         li{
             padding: 10px 15px;
             &:hover{
-                border: 1px solid $main-text-color;
+                border: 1px solid $color3;
             }
         }
 
