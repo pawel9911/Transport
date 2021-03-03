@@ -33,6 +33,7 @@
             line-height: 2em;
             position: relative;
             margin: 50px;
+            
             &::after{
                 content: '';
                 display: block;
@@ -41,9 +42,9 @@
                 background-size: 80%;
                 width: 35%;
                 height: 60%;
-                position: absolute;
-                right: 0;
-                top: 110%;
+                position: relative;
+                left: 65%;
+                top: 20%;
             }
         }
 

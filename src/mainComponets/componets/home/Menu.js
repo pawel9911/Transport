@@ -4,9 +4,9 @@ const Menu = () =>{
     return(
         <ul className='menu'>
             <li><Link to='start'>Start</Link></li>
-            <li><Link to='purpose'>O co chodzi?</Link></li>
+            <li><Link to='purpose'>Jak zamówić?</Link></li>
             <li><Link to='aboutUs'>O nas</Link></li>
-            <li><Link to='fundation'>Fundacja i organizacje</Link></li>
+            <li><Link to='fundation'>Oferta</Link></li>
             <li><Link to='contact'>Kontakt</Link></li>
         </ul>
     )

@@ -11,7 +11,7 @@ const HomeHeader = () =>{
             </nav>
             <div className='containerHead'>
                 <div className='headPanel'>
-                    <h1>Potrzebujesz Transportu?<br/>Skontaktuj się z nami dopasujemy ofertę</h1>
+                    <h1>Potrzebujesz Transportu?<br/>Skontaktuj się z nami dopasujemy ofertę do twoich potrzeb</h1>
                     <div className='mainOptionsPage'>
                         <Link to='/logowanie'>Zamów<br/> usługę</Link>
                         <Link to='/logowanie'>Poznaj naszą ofertę</Link>

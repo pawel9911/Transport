@@ -7,12 +7,12 @@ const Purpose = ({name}) =>{
             <div>
                 <h2>Wystarczą 4 proste kroki</h2>
                 <div className='options'>
-                    <Options  title='Wybierz rzeczy' text='ubrania, zabawki, sprzęt i inne'/>
-                    <Options  title='Spakuj je' text='skorzystaj z worków na śmieci'/>
-                    <Options  title='Zdecyduj komu chcesz pomóc' text='wybierz zaufane miejsce'/>
-                    <Options  title='Zamów kuriera' text='kurier przyjedzie w dogodnym terminie'/>
+                    <Options  title='Wybierz ofertę transportu' text='Przeprowadzki, Transport rzeczy i ludzi, Wywóź i utylizacja'/>
+                    <Options  title='Skontaktuj się z działem obsługi' text='Dopytaj o szczegoły ofert'/>
+                    <Options  title='Zdecyduj który wariant' text='Basic, premium, professional'/>
+                    <Options  title='Zamów ofertę' text='Ciesz się fachową obsługą '/>
                 </div>
-                <Link to='/logowanie'>Oddaj<br/> rzeczy</Link>
+                <Link to='/logowanie'>Zamów<br/>usługę</Link>
             </div>
         </div>
     )
