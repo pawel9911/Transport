@@ -10,12 +10,21 @@ const Contact = ({name}) =>{
                 [name]: value
             }
         })
-        console.log(value)
+    }
+    const handleSumbit = (e) =>{
+        e.preventDefault();
+        if((form.name.length<=0)||(form.email.length<=0)||(form.message.length<=0)){
+            console.log('Alert')
+        }
+        else{
+            e.target.submit();
+            console.log(form)
+        }
     }
     return (
             <div className='contact'>
                 <div name={name} className='container'>
-                    <form>
+                    <form onSubmit={handleSumbit}>
                         <h2>Skontaktuj się z nami</h2>
                         <span className='dataContact'>
                             <div>
