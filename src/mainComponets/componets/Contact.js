@@ -2,6 +2,13 @@ import { useState } from "react";
 
 const Contact = ({name}) =>{
     const [form, setForm] = useState({email: '', name: '', message: ''});
+    const [error, setError] = useState(null);
+    const validate = (f) =>{
+        if((f.name.length<=0)||(f.email.length<=0)||(f.message.length<=0)){
+            return 'Błąd Walidacji'
+        }
+        return null;
+    }
     const handleChange = (e) =>{
         const {name, value} = e.target;
         setForm(prevState =>{
@@ -13,19 +20,19 @@ const Contact = ({name}) =>{
     }
     const handleSumbit = (e) =>{
         e.preventDefault();
-        if((form.name.length<=0)||(form.email.length<=0)||(form.message.length<=0)){
-            console.log('Alert')
+        const errorMsg = validate(form);
+        if(errorMsg){
+            setError(errorMsg);
+            console.log('blad');
         }
-        else{
-            e.target.submit();
-            console.log(form)
-        }
+        //wysłanie do jakiegoś API
     }
     return (
             <div className='contact'>
                 <div name={name} className='container'>
                     <form onSubmit={handleSumbit}>
                         <h2>Skontaktuj się z nami</h2>
+                        {error? <p>{error}</p>:null}
                         <span className='dataContact'>
                             <div>
                                 <label>Imię</label>
