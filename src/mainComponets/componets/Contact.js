@@ -44,7 +44,7 @@ const Contact = ({name}) =>{
                     <form onSubmit={handleSumbit}>
                         <h2>Skontaktuj się z nami</h2>
                         {error? <p>Błąd Walidacji</p>: null}
-                        <span className='dataContact'>
+                        <div className='dataContact'>
                             <div>
                                 <label>Imię</label>
                                 <input placeholder='Jan' type='text' name='name' value={form.name} onChange={handleChange}></input>
@@ -53,7 +53,7 @@ const Contact = ({name}) =>{
                                 <label>Email</label>
                                 <input placeholder='jan@email.com' type='email' name='email' value={form.email} onChange={handleChange}></input>
                             </div>
-                        </span>
+                        </div>
                         <div className='message'>
                             <label> Wpisz swoją wiadomość</label>
                             <textarea placeholder='Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki.' maxLength='265' name='message' value={form.message} onChange={handleChange}></textarea>
