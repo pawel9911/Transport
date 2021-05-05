@@ -2,9 +2,10 @@ import { useState } from "react";
 
 const Contact = ({name}) =>{
     const [form, setForm] = useState({email: '', name: '', message: ''});
-    const [error, setError] = useState(null);
+    const [error, setError] = useState(false);
     const validate = (f) =>{
-        if((f.name.length<=0)||(f.email.length<=0)||(f.message.length<=0)){
+        if((f.name.length<=0)||(f.email.length<=0)||(f.message.length<=50)){
+            setError(true)
             return 'Błąd Walidacji'
         }
         return null;
@@ -22,17 +23,27 @@ const Contact = ({name}) =>{
         e.preventDefault();
         const errorMsg = validate(form);
         if(errorMsg){
-            setError(errorMsg);
-            console.log('blad');
+            console.log(errorMsg);
         }
         //wysłanie do jakiegoś API
+        fetch('./contact.json')
+        // , {
+        //     method: 'POST',
+        //     body: JSON.stringify(form),
+        //     headers: {
+        //         'content-Type': 'application/json'
+        //     }
+        // }
+        .then((response)=> response.json())
+        .then(obj => console.log(obj.messages, 'dodałem wiadomość'))
+        .catch(err => console.log(err))
     }
     return (
             <div className='contact'>
                 <div name={name} className='container'>
                     <form onSubmit={handleSumbit}>
                         <h2>Skontaktuj się z nami</h2>
-                        {error? <p>{error}</p>:null}
+                        {error? <p>Błąd Walidacji</p>: null}
                         <span className='dataContact'>
                             <div>
                                 <label>Imię</label>

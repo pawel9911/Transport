@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const Support = ({name}) =>{
     const [supportIndex, setSupportIndex] = useState(0);
